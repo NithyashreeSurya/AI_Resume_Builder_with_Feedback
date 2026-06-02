@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Results</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell results-shell">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="ambient ambient-three"></div>
+
+    <main class="results-page">
+      <section class="results-hero">
+        <div class="brand-badge">Resume Generated</div>
+        <h1>Your Resume Results</h1>
+        <p>Review the feedback, check your score, and download the professional resume generated from your details.</p>
+        <div class="results-actions">
+          <a class="nav-button nav-button-secondary" href="builder.html">Back to Builder</a>
+          <button class="download-button results-download" type="button" id="results-download-button" hidden>Download Resume</button>
+        </div>
+      </section>
+
+      <section class="feedback-card results-card" id="results-feedback-card">
+        <div class="feedback-card__header">
+          <div>
+            <span class="feedback-kicker">ATS Overview</span>
+            <h2>Resume Feedback Dashboard</h2>
+          </div>
+          <span class="feedback-badge">Generated Resume</span>
+        </div>
+        <p id="results-message">Your generated resume analysis will appear here.</p>
+        <p class="results-role" id="results-role"></p>
+        <div class="score-panel" id="results-score-panel" hidden>
+          <div class="score-panel__row">
+            <div class="score-ring" id="results-score-ring">
+              <div class="score-ring__inner">
+                <span class="score-ring__value" id="results-score-value">0</span>
+                <span class="score-ring__label">Score</span>
+              </div>
+            </div>
+            <div class="score-panel__summary">
+              <strong>Resume Score</strong>
+              <span class="score-panel__copy">This score reflects the strength of your entered details, section coverage, and keyword match.</span>
+            </div>
+          </div>
+          <div class="score-bar" aria-hidden="true">
+            <div class="score-bar__fill" id="results-score-bar-fill"></div>
+          </div>
+          <div class="dashboard-metrics" id="results-dashboard-metrics"></div>
+        </div>
+
+        <div class="analysis-block">
+          <div class="analysis-block__header">
+            <h3>Key Findings</h3>
+            <span class="analysis-count" id="results-feedback-count">0 items</span>
+          </div>
+          <ul id="results-feedback-list"></ul>
+        </div>
+
+        <div class="analysis-block">
+          <div class="analysis-block__header">
+            <h3>Improvement Suggestions</h3>
+            <span class="analysis-count" id="results-suggestions-count">0 items</span>
+          </div>
+          <ul id="results-suggestions-list"></ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="results.js"></script>
+</body>
+</html>

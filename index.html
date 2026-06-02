@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Resume Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell template-shell">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="ambient ambient-three"></div>
+
+    <div class="particles" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <main class="template-page">
+      <section class="template-hero">
+        <div class="brand-badge">AI-Powered Resume Studio</div>
+        <h1>Choose Your Resume Template</h1>
+        <p>Select a professional layout first, then continue to the resume builder with your template already applied.</p>
+        <div class="template-hero-actions">
+          <a class="nav-button nav-button-secondary" href="builder.html">Go to Builder</a>
+        </div>
+      </section>
+
+      <section class="template-library-card">
+        <div class="feedback-card__header">
+          <div>
+            <span class="feedback-kicker">Template Gallery</span>
+            <h2>Professional Resume Designs</h2>
+          </div>
+          <span class="feedback-badge" id="selected-template-badge">Classic Corporate</span>
+        </div>
+        <p class="template-library-copy">Each template keeps the same resume content and generation flow. Only the final PDF design changes.</p>
+
+        <div class="template-card-grid template-card-grid--full" id="template-selection-grid">
+          <article class="template-card active" data-template-value="classic">
+            <span class="template-card__preview template-card__preview--classic">CC</span>
+            <strong>Classic Corporate</strong>
+            <small>Formal black-and-white layout for traditional and corporate roles.</small>
+            <button class="template-use-button" type="button">Use This Template</button>
+          </article>
+
+          <article class="template-card" data-template-value="modern">
+            <span class="template-card__preview template-card__preview--modern">MP</span>
+            <strong>Modern Professional</strong>
+            <small>Clean modern corporate style with colored headings and balanced spacing.</small>
+            <button class="template-use-button" type="button">Use This Template</button>
+          </article>
+
+          <article class="template-card" data-template-value="fresher">
+            <span class="template-card__preview template-card__preview--fresher">SF</span>
+            <strong>Student Fresher</strong>
+            <small>Education and projects emphasized with simple clean structure.</small>
+            <button class="template-use-button" type="button">Use This Template</button>
+          </article>
+
+          <article class="template-card" data-template-value="creative">
+            <span class="template-card__preview template-card__preview--creative">CP</span>
+            <strong>Creative Portfolio</strong>
+            <small>Stylish sidebar layout with creative colors and readable design.</small>
+            <button class="template-use-button" type="button">Use This Template</button>
+          </article>
+
+          <article class="template-card" data-template-value="sidebar">
+            <span class="template-card__preview template-card__preview--sidebar">SP</span>
+            <strong>Sidebar Portfolio</strong>
+            <small>Uses a left sidebar for contact details, skills, and quick scanning.</small>
+            <button class="template-use-button" type="button">Use This Template</button>
+          </article>
+
+          <article class="template-card" data-template-value="developer">
+            <span class="template-card__preview template-card__preview--developer">DV</span>
+            <strong>Developer Resume</strong>
+            <small>Technical layout with strong emphasis on projects and tools.</small>
+            <button class="template-use-button" type="button">Use This Template</button>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="template-selection.js"></script>
+</body>
+</html>
